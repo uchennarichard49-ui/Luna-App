@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="LUNA Quotes - Discover inspiring quotes every day.">
+    <meta name="theme-color" content="#6c5ce7">
+
+    <title>LUNA Quotes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="logo">
+            🌙 LUNA
+        </div>
+
+        <button id="themeButton" class="icon-button" aria-label="Toggle dark mode">
+            🌙
+        </button>
+    </header>
+
+
+    <main class="container">
+
+        <section class="hero">
+            <p class="small-title">DAILY INSPIRATION</p>
+
+            <h1>Find a quote that<br>speaks to you.</h1>
+
+            <p class="hero-text">
+                Discover inspiring words for motivation, life,
+                friendship, success and more.
+            </p>
+        </section>
+
+
+        <section class="category-section">
+
+            <div class="section-title">
+                <h2>Categories</h2>
+            </div>
+
+            <div class="categories">
+
+                <button class="category active" data-category="All">
+                    All
+                </button>
+
+                <button class="category" data-category="Motivation">
+                    💪 Motivation
+                </button>
+
+                <button class="category" data-category="Success">
+                    🏆 Success
+                </button>
+
+                <button class="category" data-category="Life">
+                    🌱 Life
+                </button>
+
+                <button class="category" data-category="Friendship">
+                    🤝 Friendship
+                </button>
+
+                <button class="category" data-category="School">
+                    📚 School
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="quote-card">
+
+            <div class="quote-icon">
+                “
+            </div>
+
+            <p id="quoteText" class="quote-text">
+                Loading quote...
+            </p>
+
+            <p id="quoteAuthor" class="quote-author">
+                — LUNA
+            </p>
+
+            <p id="quoteCategory" class="quote-category">
+                Motivation
+            </p>
+
+        </section>
+
+
+        <section class="actions">
+
+            <button id="newQuoteButton" class="primary-button">
+                ✨ New Quote
+            </button>
+
+            <button id="favoriteButton" class="secondary-button">
+                ♡ Favorite
+            </button>
+
+            <button id="copyButton" class="secondary-button">
+                📋 Copy
+            </button>
+
+            <button id="shareButton" class="secondary-button">
+                📤 Share
+            </button>
+
+        </section>
+
+
+        <section class="favorites-section">
+
+            <div class="favorites-header">
+                <h2>❤️ My Favorites</h2>
+
+                <span id="favoriteCount">
+                    0
+                </span>
+            </div>
+
+            <div id="favoritesList" class="favorites-list">
+
+                <p class="empty-message">
+                    Your favorite quotes will appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>🌙 LUNA Quotes</p>
+        <p>Words that inspire.</p>
+    </footer>
+
+
+    <div id="message" class="message">
+        Copied!
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
